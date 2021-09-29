@@ -136,7 +136,7 @@ namespace ExtremumCalculator
 
             schedule1.GridSize = sizeGrid;
             schedule1.Points = GetPointF(function, -8f, 8f, schedule1.GridSize, 0.001f);
-            schedule1.pointsRoot.Add(calculator.Method.GetPoint());
+            schedule1.pointsRoot.Add(new PointF((float)result, (float)function(result)));
             schedule1.Refresh();
 
             labelResult.Text = String.Format("x: {0}\nf({0}) = {1}", result, function(result));
@@ -148,7 +148,7 @@ namespace ExtremumCalculator
 
             schedule1.GridSize = sizeGrid;
             schedule1.Points = GetPointF(function, -8f, 8f, schedule1.GridSize, 0.001f);
-            schedule1.pointsRoot.Add(calculator.Method.GetPoint());
+            schedule1.pointsRoot.Add(new PointF((float)result, (float)function(result)));
             schedule1.Refresh();
 
             labelGrid.Text = Convert.ToString(sizeGrid);
