@@ -2,6 +2,9 @@
 
 namespace ExtremumCalculator
 {
+    /// <summary>
+    /// Класс поиска экстумума.
+    /// </summary>
     class CalculatorExtremum
     {
         private IExtremumMethod method;
@@ -23,7 +26,7 @@ namespace ExtremumCalculator
         }
 
         /// <summary>
-        /// Конструктор класса по умолчанию
+        /// Конструктор класса по умолчанию.
         /// </summary>
         public CalculatorExtremum()
         {
@@ -31,7 +34,7 @@ namespace ExtremumCalculator
         }
 
         /// <summary>
-        /// Конструктор класса для задания метода поиска
+        /// Конструктор класса для задания метода поиска.
         /// </summary>
         /// <param name="method">Метод поиска</param>
         public CalculatorExtremum(IExtremumMethod method)

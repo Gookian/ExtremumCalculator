@@ -3,12 +3,15 @@ using System.Drawing;
 
 namespace ExtremumCalculator
 {
+    /// <summary>
+    /// Класс поиска экстумума дихотомическим методом.
+    /// </summary>
     class HalfDivision : IExtremumMethod
     {
         private PointF coord = Point.Empty;
 
         /// <summary>
-        /// Свойство: коорднаты минимума или максимума
+        /// Свойство: коорднаты минимума или максимума.
         /// </summary>
         public PointF Coord
         {

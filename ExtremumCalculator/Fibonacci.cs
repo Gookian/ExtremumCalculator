@@ -3,12 +3,15 @@ using System.Drawing;
 
 namespace ExtremumCalculator
 {
-    class Fibonacci
+    /// <summary>
+    /// Класс поиска экстумума методом фибоначи.
+    /// </summary>
+    class Fibonacci : IExtremumMethod
     {
         private PointF coord = Point.Empty;
 
         /// <summary>
-        /// Свойство: коорднаты минимума или максимума
+        /// Свойство: коорднаты минимума или максимума.
         /// </summary>
         public PointF Coord
         {
