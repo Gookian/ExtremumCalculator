@@ -7,9 +7,6 @@ using System;
 
 namespace ExtremumCalculator
 {
-    /// <summary>
-    /// Класс компонента который отрисовывает график функции.
-    /// </summary>
     public partial class Schedule : UserControl
     {
         private Font font = new Font(FontFamily.GenericSansSerif, 10f, FontStyle.Regular, GraphicsUnit.Pixel);
@@ -25,9 +22,6 @@ namespace ExtremumCalculator
 
         public List<PointF> pointsRoot = new List<PointF>();
 
-        /// <summary>
-        /// Свойство: точки для отрисовки функции.
-        /// </summary>
         [DisplayName("Points")]
         [Description("Точки графика функции")]
         public PointF[] Points
@@ -44,9 +38,6 @@ namespace ExtremumCalculator
             }
         }
 
-        /// <summary>
-        /// Свойство: размер компонента.
-        /// </summary>
         [DisplayName("Size")]
         [Description("Размер")]
         public new Size Size
@@ -65,9 +56,6 @@ namespace ExtremumCalculator
             }
         }
 
-        /// <summary>
-        /// Свойство: размер сетки.
-        /// </summary>
         [DisplayName("gridSize")]
         [Description("Размер сетки")]
         public int GridSize

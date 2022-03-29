@@ -3,17 +3,14 @@ using System.Drawing;
 
 namespace ExtremumCalculator
 {
-    /// <summary>
-    /// Класс поиска экстумума методом золотого сечения.
-    /// </summary>
-    class GoldenSection : IExtremumMethod
+    public class GoldenSection : IExtremumMethod
     {
         private const double PHI = 1.6180339887498948482;
 
         private PointF coord = Point.Empty;
         
         /// <summary>
-        /// Свойство: коорднаты минимума или максимума.
+        /// Свойство: коорднаты минимума или максимума
         /// </summary>
         public PointF Coord
         {
